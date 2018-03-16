@@ -5,7 +5,7 @@ def oxford_comma(array)
     return array.first
   else
     array.each_with_index do |item, idx|
-      if idx = array.length - 1
+      if idx == array.length - 1
         contents += "and #{item}"
       else
         contents += "#{item}, "
