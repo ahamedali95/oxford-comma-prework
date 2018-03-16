@@ -1,3 +1,17 @@
 def oxford_comma(array)
-  array.to_sentence
+  contents = ""
+
+  if array.length == 0
+    array.first
+  else
+    array.each_with_index do |item, idx|
+      if idx = array.length - 1
+        contents += "and #{item}"
+      else
+        contents += "#{item}, "
+      end
+    end
+  end
+
+  contents
 end
