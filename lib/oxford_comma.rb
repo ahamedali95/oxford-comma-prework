@@ -3,7 +3,7 @@ def oxford_comma(array)
 
   if array.length == 1
     return array.first
-  elsif
+  elsif array.length == 2
     return array.first + " and " + array.second
   else
     array.each_with_index do |item, idx|
